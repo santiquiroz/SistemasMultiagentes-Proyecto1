@@ -1,0 +1,13 @@
+start interaccion-usuario
+
+actor AC1 DispositivoMovil
+
+agent AG1 AgenteInteracciónUsuario
+agent AG2 AgenteNotificador
+
+
+box loop
+	message AG2 AG1 InfoNotificacion
+	action AG1 AC1 Notificación
+end loop
+finish

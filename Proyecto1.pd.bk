@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- backup@2019/06/23/10:15:53 -->
+<!-- backup@2019/06/23/10:24:13 -->
 <Project PDTVersion="0.3.2">
 <RelationPool IMemento.internal.id="5386" PoolType="5">
 <Relation DST="118017" IMemento.internal.id="121093" Prominence="0" RelationType="-2147483648" SRC="92417"/>
@@ -589,7 +589,7 @@
 <Actor EntityName="DispositivoMovil" IMemento.internal.id="79105"/>
 <Goal EntityName="Controlar Puertas" IMemento.internal.id="60673"/>
 <Action EntityName="ActivarVentilación" IMemento.internal.id="27137"/>
-<Protocol EntityName="interaccion-usuario" IMemento.internal.id="154625"/>
+<Protocol AUMLText="start interaccion-usuario&#x0D;&#x0A;&#x0D;&#x0A;actor AC1 pluviometro&#x0D;&#x0A;actor AC2 Piranometro&#x0D;&#x0A;actor AC3 Campo Electrico&#x0D;&#x0A;actor AC4 Radar Perfilador de Vientos&#x0D;&#x0A;actor AC5 Ceilometro&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;agent AG1 Agente receptor de datos&#x0D;&#x0A;&#x0D;&#x0A;box loop&#x0D;&#x0A;&#x09;percept AC1 AG1 cantidad de agua&#x0D;&#x0A;&#x09;percept AC2 AG1 radiacion solar&#x0D;&#x0A;&#x09;percept AC3 AG1 actividad de rayos&#x0D;&#x0A;&#x09;percept AC4 AG1 velocidad de vientos&#x0D;&#x0A;&#x09;percept AC5 AG1 concentracion de aerosoles en la troposfera&#x0D;&#x0A;&#x09;action AG1 AC5 confirmacion de recepcion&#x0D;&#x0A;end loop&#x0D;&#x0A;finish" EntityName="interaccion-usuario" IMemento.internal.id="154625"/>
 <Agent EntityName="AgenteIdentificador" IMemento.internal.id="130305"/>
 <Percept EntityName="Luminosidad" IMemento.internal.id="81665"/>
 <Data EntityName="DatosAdmon" IMemento.internal.id="93441"/>
