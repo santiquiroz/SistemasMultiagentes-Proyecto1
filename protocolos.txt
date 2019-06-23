@@ -11,3 +11,50 @@ box loop
 	action AG1 AC1 Notificación
 end loop
 finish
+
+------------------------------------------------------------------------
+
+start notificar-usuario
+
+actor AC1 DispositivoMovil
+
+agent AG1 AgenteInteracciónUsuario
+agent AG2 AgenteNotificador
+
+
+box loop
+	message AG2 AG1 InfoNotificacion
+	action AG2 AC1 Notificación
+end loop
+finish
+
+---------------------------------------------------------------------------
+
+start automatizacion-porteria
+
+actor AC1 MovimientoSensor
+actor AC2 IluminaciónSensor
+actor AC3 Lampara
+actor AC4 Termometro
+actor AC5 Ventilación
+actor AC6 Puertas
+
+agent AG1 Agenteautomatizador
+
+
+
+box loop
+	percept AC1 AG1 Movimiento
+    action AG1 AC6 AbrirPuertas
+
+    percept AC2 AG1 Luminosidad
+	action AG1 AC3 EncenderLampara
+
+    percept AC4 AG1 Temperatura
+    action AG1 AC5 ActivarVentilación
+
+
+end loop
+finish
+
+----------------------------------------------------------------------------
